@@ -8,12 +8,11 @@ External NPWD app for Weather Forecast.
 
 ## Description
 
-`npwd_renewed_weather` is a script tailored for FiveM servers utilizing the QBX Framework alongside the Renewed Weather Sync Script and NPWD as a phone resource, enabling players to conveniently access and check the weather forecast within the game."
+`npwd_renewed_weather` is a script tailored for FiveM servers utilizing Renewed Weather Sync Script and NPWD as a phone resource, enabling players to conveniently access and check the weather forecast within the game."
 
 ## Dependencies
 
 - [NPWD Phone](https://github.com/project-error/npwd)
-- [QBX Core](https://github.com/Qbox-project/qbx_core)
 - [Renewed Weather Sync](https://github.com/Renewed-Scripts/Renewed-Weathersync)
 
 ## Install
@@ -22,7 +21,14 @@ External NPWD app for Weather Forecast.
 2. **Unzip** and add the resource to your server's resources folder.
 3. **Ensure** `npwd_renewed_weather` **BEFORE** `npwd`.
 4. **Add** the app to `NPWD`'s `config.json` in the apps section: `"apps": ["npwd_renewed_weather"]`.
+5. **Open** `Renewed-Weathersync/server/weather.lua` and **Add** the following snippet.
+
+```lua
+exports('getWeatherList', function()
+    return weatherList
+end)
+```
 
 ## Credits
 
-- [npwd-community](https://github.com/npwd-community) for [npwd_services](https://github.com/npwd-community/npwd_services) (UI from there)
+- [Project Error](https://github.com/project-error/) for [NPWD App Template](https://github.com/project-error/npwd-app-template)
