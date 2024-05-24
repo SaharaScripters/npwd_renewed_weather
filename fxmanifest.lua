@@ -1,8 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'A simple yellow pages script for NPWD Phone'
-version '1.0.0'
+author 'SaharaScripters'
+description 'Weather forecast app for NPWD Phone'
+version '1.0.1'
 
 shared_script '@ox_lib/init.lua'
 
@@ -17,4 +18,6 @@ files {
 	'web/dist/**/*',
 }
 
+use_experimental_fxv2_oal 'yes'
 lua54 'yes'
+
