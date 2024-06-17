@@ -32,3 +32,7 @@ end)
 ## Credits
 
 - [Project Error](https://github.com/project-error/) for [NPWD App Template](https://github.com/project-error/npwd-app-template)
+
+## Need Help?
+
+[![Need Help?](https://cdn.imgpile.com/f/yryoDqk_xl.png)](https://discord.gg/kQxzuyqnkR)
